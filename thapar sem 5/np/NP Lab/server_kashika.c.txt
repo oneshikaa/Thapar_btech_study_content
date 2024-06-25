@@ -1,0 +1,36 @@
+// server side : Kashika Purohit 102103418
+
+#include <stdio.h>
+#include<sys/socket.h>
+#include<netdb.h>
+#include<sys/types.h>
+#include<string.h>
+
+int main() {
+	
+	int comn_sock; //communication socket. 
+	char data[100];
+    
+	int sockID = socket(AF_INET,SOCK_STREAM,0); 
+    printf("Socket ID assigned: %d",sockID);
+    
+    struct sockaddr_in server_addr;
+    server_addr.sin_family = AF_INET;
+    server_addr.sin_addr.s_addr = htonl(INADDR_ANY); 
+    server_addr.sin_port = htons(2200); 
+
+    bind(sockID , (struct sockaddr*)&server_addr, sizeof(server_addr));
+    listen(sockID,100); //100 clients in queue...
+        
+    while(1){
+        comn_sock = accept(sockID, (struct sockaddr*)NULL,NULL);
+        recv(comn_sock,data,100,0);
+	
+		printf("Data Recieved from Client: %s " ,data);
+		send(comn_sock , data,strlen(data),0);
+
+		close(comn_sock);
+	
+	}
+}
+

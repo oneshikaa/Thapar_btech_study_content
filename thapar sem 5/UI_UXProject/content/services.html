@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	Bootstrap Grid CSS
+	<link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="../css/style.css">
+  
+	<meta name="description" content="#">
+	<meta name="keywords" content="#">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Services</title>
+	
+</head>
+<body>
+	<!---Preloader: Start-->
+	<div id="page-preloader">col-12
+		<span class="spinner"></span>
+	</div>
+	<!---Preloader: End-->
+	<header class="header" id="header">
+		<div class="top-bar">
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<div class="col-9 col-md-4 col-lg-3 mr-auto">
+						<a href="#!" class="logo">
+							JC
+							<span>Legal Advisory Services</span>
+						</a>
+					</div>
+					<div class="d-none d-lg-block col-lg-6">
+						<nav>
+							<ul class="menu">
+								<li class="menu__item">
+									<a href="../index.html">Home</a>
+								</li>
+								<li class="menu__item">
+									<a href="about.html">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!">Services</a>
+								</li>
+								<li class="menu__item">
+									<a href="contacts.html">Contacts</a>
+								</li>
+								<li class="menu__item">
+									<a href="reviews.html">Reviews</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="d-none d-md-block col-md-4 col-lg-3">
+						<div class="call">
+							<button class="call__icon">
+								<img src="../img/phone.png" alt="phone">
+							</button> 	
+							<div class="call__text">
+								<span>Request a call</span>
+								<a href="tel:8360541582">+91 83605 41582</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-2 col-sm-1 d-lg-none">
+						<div class="burger">
+							<img src="../img/burger.png" alt="menu">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="side-menu">
+				<div class="side-menu__background"></div>
+				<div class="side-menu__content">
+					<div class="side-menu__top">
+						<a href="#!" class="logo">
+							JC
+							<span>Legal Advisory Services</span>
+						</a>
+						<button class="side-menu__btn">x</button>
+					</div>
+					<nav>
+						<ul class="side-menu__list">
+							<li class="side-menu__item">
+								<a href="../index.html">Home</a>
+							</li>
+							<li class="side-menu__item">
+								<a href="about.html">About</a>
+							</li>
+							<li class="side-menu__item">
+								<a href="#!">Services</a>
+							</li>
+							<li class="side-menu__item">
+								<a href="contacts.html">Contacts</a>
+							</li>
+							<li class="side-menu__item">
+								<a href="reviews.html">Reviews</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="call">
+						<button class="call__icon">
+							<img src="../img/phone.png" alt="phone">
+						</button> 	
+						<div class="call__text">
+							<span>Request a call</span>
+							<a href="tel:8360541582">+91 83605 41582</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-column flex-sm-row justify-content-between pr-lg-0">
+						<h2 class="navigation__title">Services</h2>
+						<div class="navigation__sections d-flex">
+							<a href="../index.html">Home /&nbsp;</a>
+							<div class="navigation__current">
+								Services
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="services" id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="section-title">
+						Our
+						<span>Services</span>
+					</h2>
+				</div>
+				<div class="col-lg-12 p-lg-0">
+					<div class="row d-flex">
+						<div class="col-lg-7">
+							<p class="services__desc">
+								Are you looking to bring your business ideas to life? Establishing a new business demands a robust legal foundation, and we're here to assist you at every stage of the process.
+							</p>
+						</div>
+						<div class="col-lg-5 pr-md-0">
+							<ul class="cases__slider d-flex justify-content-md-between">
+								<li class="cases__slide cases__slide_left">
+									Startups
+								</li>
+								<li class="cases__slide cases__slide_center">
+									Freelancing								
+								</li>
+								<li class="cases__slide cases__slide_right">
+									Small business
+								</li>
+							</ul>
+						</div>
+					</div>		
+				</div>	
+			</div>
+		</div>
+		<div class="service-cards">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center">
+						<div class="service-card service-card-prac">
+							<h3 class="service-card__title ">
+								Corporate practice, M&A
+							</h3>
+							<p class="service-card__description">
+								Services in the field of corporate governance, capital markets, M&A
+							</p>
+							<span class="service-card__price">₹2350</span>
+							<div>
+								<form>
+								  <button  class="service-card__btn btn" id="rzp-button1">
+									<i class="fas fa-donate"></i>&nbsp;&nbsp;Book Now!
+								  </button>
+								  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+								  <script>
+									var options = {
+									  key: "rzp_test_aIfnpuWEudWnID", // Enter the Key ID generated from the Dashboard
+									  amount: "235000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+									  currency: "INR",
+									  name: "Pranav Gupta",
+									  description: "Corporate practice, M&A",
+									  handler: function (response) {
+										console.log('Payment response:', response);
+										if (
+										  typeof response.razorpay_payment_id == "undefined" ||
+										  response.razorpay_payment_id < 1
+										) {
+										  swal({
+											title: "Please try again later!",
+											icon: "error",
+											button: "Close",
+										  });
+										} else {
+										  swal({
+											title: "Thank You!",
+											icon: "success",
+											button: "Close",
+										  });
+										}
+									  },
+									  theme: {
+										color: "#3399cc",
+									  },
+									};
+									var rzp1 = new Razorpay(options);
+									document.getElementById("rzp-button1").onclick = function (
+									  e1
+									) {
+									  rzp1.open();
+									  e1.preventDefault();
+									};
+									</script>
+								</form>	
+							</div>
+						</div>	
+					</div>
+					<div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center">
+						<div class="service-card service-card-idea">
+							<h3 class="service-card__title">
+								Intellectual property
+							</h3>
+							<p class="service-card__description">
+								Full range of services in the field of intellectual property
+							</p>
+							<span class="service-card__price">₹3390</span>
+							<div>
+								<form>
+								  <button class="service-card__btn btn" id="rzp-button2">
+									<i class="fas fa-donate"></i>&nbsp;&nbsp;Book Now!
+								  </button>
+								  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+								  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+								  <script>
+									var options2 = {
+									  key: "rzp_test_aIfnpuWEudWnID", // Enter the Key ID generated from the Dashboard
+									  amount: "339000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+									  currency: "INR",
+									  name: "Pranav Gupta",
+									  description: "Intellectual property",
+									  handler: function (responsess) {
+										if (
+										  typeof responsess.razorpay_payment_id == "undefined" ||
+										  responsess.razorpay_payment_id < 1
+										) {
+										  swal({
+											title: "Please try again later!",
+											icon: "error",
+											button: "Close",
+										  });
+										} else {
+										  swal({
+											title: "Thank You!",
+											icon: "success",
+											button: "Close",
+										  });
+										}
+									  },
+									  theme: {
+										color: "#3399cc",
+									  },
+									};
+									var rzp2 = new Razorpay(options2);
+									document.getElementById("rzp-button2").onclick = function (
+									  e
+									) {
+									  rzp2.open();
+									  e.preventDefault();
+									};
+								  </script>
+								</form>
+							</div>
+						</div>	
+					</div>
+					<div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center">
+						<div class="service-card">
+							<h3 class="service-card__title service-card-internet">
+								Internet business and digital economy
+							</h3>
+							<p class="service-card__description">
+								Full range of legal services to support Internet projects
+							</p>
+							<span class="service-card__price">₹3480</span>
+							<div>
+								<form>
+								  <button class="service-card__btn btn" id="rzp-button3">
+									<i class="fas fa-donate"></i>&nbsp;&nbsp;Book Now!
+								  </button>
+								 
+								  <script>
+									var options3 = {
+									  key: "rzp_test_aIfnpuWEudWnID", // Enter the Key ID generated from the Dashboard
+									  amount: "348000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+									  currency: "INR",
+									  name: "Pranav Gupta",
+									  description: "Internet business and digital economy",
+									  handler: function (responsesss) {
+										if (
+										  typeof responsesss.razorpay_payment_id == "undefined" ||
+										  responsesss.razorpay_payment_id < 1
+										) {
+										  swal({
+											title: "Please try again later!",
+											icon: "error",
+											button: "Close",
+										  });
+										} else {
+										  swal({
+											title: "Thank You!",
+											icon: "success",
+											button: "Close",
+										  });
+										}
+									  },
+									  theme: {
+										color: "#3399cc",
+									  },
+									};
+									var rzp3 = new Razorpay(options3);
+									document.getElementById("rzp-button3").onclick = function (
+									  e
+									) {
+									  rzp3.open();
+									  e.preventDefault();
+									};
+								  </script>
+								</form>
+							</div>
+						</div>	
+					</div>
+					<div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center">
+						<div class="service-card service-card-tmt">
+							<h3 class="service-card__title">
+								Information Technology
+							</h3>
+							<p class="service-card__description">
+								Comprehensive legal support for businesses in the field of communications, media, advertising
+							</p>
+							<span class="service-card__price">₹5525</span>
+							<div>
+								<form>
+								  <button class="service-card__btn btn" id="rzp-button4">
+									<i class="fas fa-donate"></i>&nbsp;&nbsp;Book Now!
+								  </button>
+								  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+								  <script>
+									var options4 = {
+									  key: "rzp_test_aIfnpuWEudWnID", // Enter the Key ID generated from the Dashboard
+									  amount: "552500", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+									  currency: "INR",
+									  name: "Pranav Gupta",
+									  description: "Information Technology",
+									  handler: function (responsessss) {
+										if (
+										  typeof responsessss.razorpay_payment_id == "undefined" ||
+										  responsessss.razorpay_payment_id < 1
+										) {
+										  swal({
+											title: "Please try again later!",
+											icon: "error",
+											button: "Close",
+										  });
+										} else {
+										  swal({
+											title: "Thank You!",
+											icon: "success",
+											button: "Close",
+										  });
+										}
+									  },
+									  theme: {
+										color: "#3399cc",
+									  },
+									};
+									var rzp4 = new Razorpay(options4);
+									document.getElementById("rzp-button4").onclick = function (
+									  e
+									) {
+									  rzp4.open();
+									  e.preventDefault();
+									};
+								  </script>
+								</form>
+							</div>
+						</div>	
+					</div>
+					<div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center">
+						<div class="service-card service-card-business">
+							<h3 class="service-card__title">
+								Government Relations
+							</h3>
+							<p class="service-card__description">
+								Resolving issues related to business regulation
+							</p>
+							<span class="service-card__price">₹2345</span>
+							<div>
+								<form>
+								  <button class="service-card__btn btn" id="rzp-button5">
+									<i class="fas fa-donate"></i>&nbsp;&nbsp;Book Now!
+								  </button>
+								  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+								  <script>
+									var options5 = {
+									  key: "rzp_test_aIfnpuWEudWnID", // Enter the Key ID generated from the Dashboard
+									  amount: "234500", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+									  currency: "INR",
+									  name: "Pranav Gupta",
+									  description: "Government Relations",
+									  handler: function (responsesssss) {
+										if (
+										  typeof responsesssss.razorpay_payment_id == "undefined" ||
+										  responsesssss.razorpay_payment_id < 1
+										) {
+										  swal({
+											title: "Please try again later!",
+											icon: "error",
+											button: "Close",
+										  });
+										} else {
+										  swal({
+											title: "Thank You!",
+											icon: "success",
+											button: "Close",
+										  });
+										}
+									  },
+									  theme: {
+										color: "#3399cc",
+									  },
+									};
+									var rzp5 = new Razorpay(options5);
+									document.getElementById("rzp-button5").onclick = function (
+									  e
+									) {
+									  rzp5.open();
+									  e.preventDefault();
+									};
+								  </script>
+								</form>
+							</div>
+						</div>	
+					</div>
+					<div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center">
+						<div class="service-card service-card-target">
+							<h3 class="service-card__title">
+								Commercial practice
+							</h3>
+							<p class="service-card__description">
+								Services for comprehensive legal support for business
+							</p>
+							<span class="service-card__price">₹3410</span>
+							<div>
+								<form>
+								  <button class="service-card__btn btn" id="rzp-button6">
+									<i class="fas fa-donate"></i>&nbsp;&nbsp;Book Now!
+								  </button>
+								  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+								  <script>
+									var options6 = {
+									  key: "rzp_test_aIfnpuWEudWnID", // Enter the Key ID generated from the Dashboard
+									  amount: "341000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+									  currency: "INR",
+									  name: "Pranav Gupta",
+									  description: "Commercial practice",
+									  handler: function (responses) {
+										if (
+										  typeof responses.razorpay_payment_id == "undefined" ||
+										  responses.razorpay_payment_id < 1
+										) {
+										  swal({
+											title: "Please try again later!",
+											icon: "error",
+											button: "Close",
+										  });
+										} else {
+										  swal({
+											title: "Thank You!",
+											icon: "success",
+											button: "Close",
+										  });
+										}
+									  },
+									  theme: {
+										color: "#3399cc",
+									  },
+									};
+									var rzp6 = new Razorpay(options6);
+									document.getElementById("rzp-button6").onclick = function (
+									  e
+									) {
+									  rzp6.open();
+									  e.preventDefault();
+									};
+								  </script>
+								</form>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-3">
+					<div class="footer-item d-flex flex-column flex-sm-row  justify-content-between align-items-baseline flex-lg-column">
+						<a href="#" class="logo">
+							JC
+							<span>Legal Advisory Services</span>
+						</a>
+						<ul class="social">
+							<li>
+								<a href="http://facebook.com" target="_blank">
+									<img src="../img/facebook.svg" alt="facebook">
+								</a>
+							</li>
+							<li>
+								<a href="#!" target="_blank">
+									<img src="../img/messenger.svg" alt="messenger">
+								</a>
+							</li>
+							<li>
+								<a href="http://instagram.com" target="_blank">
+									<img src="../img/instagram.svg" alt="instagram">
+								</a>
+							</li>
+							<li>
+								<a href="http://youtube.com" target="_blank">
+									<img src="../img/youtube.svg" alt="youtube">
+								</a>
+							</li>
+						</ul>
+						<p class="develop-text">
+							JC Legal Advisory Services
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg-2">
+					<ul class="footer-menu">
+						<h3 class="footer-menu__title">Menu</h3>
+						<li class="footer-menu__item">
+							<a href="../index.html">
+								Home
+							</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="about.html">
+								About
+							</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="reviews.html">
+								Reviews
+							</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="../index.html#news">
+								News
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-9 col-lg-3">
+					<ul class="footer-menu contacts">
+						<h3 class="footer-menu__title">Contact</h3>
+						<li class="footer-menu__item">
+							<div class="footer-menu__img footer-menu__img_addres"></div>
+							<p class="footer-menu__addres">Chandigarh<br>Sector-52 , Kajheri</p>
+						</li>
+						<li class="footer-menu__item">
+							<div class="footer-menu__img footer-menu__img_tel"></div>
+							<div class="footer-menu__contacts">
+								<a href="tel:8360541582">
+									+91 83605 41582
+								</a>
+								<a href="tel:8360541582">
+									+91 92556 61404
+								</a>
+							</div>
+						</li>
+						<li class="footer-menu__item">
+							<div class="footer-menu__img footer-menu__img_mail"></div>
+							<a href="mailto:JClegal@gmail.com">
+								JClegal@gmail.com
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-12 col-lg-4">
+					<h3 class="distribution-title">
+						Subscribe to our newsletter
+
+					</h3>
+					<form action="" class="dist-form d-flex flex-column flex-md-row justify-content-between flex-lg-column">
+						<input type="email" class="dist__inp" required placeholder="Your email">
+						<buttont class="dist__btn btn">Subscribe</buttont>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p class="mobile develop-text">
+						JC Legal Advisory Services
+					</p>
+					<p class="rights-text">
+						&#169; 2007-2023 All rights reserved
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="order-call">
+		<form class="order-call__form" id="order-form">
+			<button class="order-call__close-btn">X</button>
+			<h2 class="order-call__title">Submit your details</h2>
+			<p class="order-call__desc">
+				And our specialists will contact you as soon as possible to provide professional assistance!
+			</p>
+			<div class="order-call__item">
+				<label class="black-label" for="firstName">Name</label>
+				<input class="order-call__input" id="firstName" type="text" name="firstName" required></input>
+			</div>
+			<div class="order-call__item">
+				<label class="black-label" for="tel">Phone</label>
+				<input class="order-call__input" id="tel" type="tel" name="phoneNumber" required></input>
+			</div>
+			<button class="order-call__btn btn" type="submit">Send</button>
+		</form>
+	</div>
+	<script src="../js/parallax.js"></script>
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery.validate.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>

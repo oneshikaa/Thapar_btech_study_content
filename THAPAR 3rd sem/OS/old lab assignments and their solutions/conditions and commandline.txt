@@ -1,0 +1,20 @@
+conditions
+
+comparison    Evaluated to true when
+$a -lt $b    $a < $b
+$a -gt $b    $a > $b
+$a -le $b    $a <= $b
+$a -ge $b    $a >= $b
+$a -eq $b    $a is equal to $b
+$a -ne $b    $a is not equal to $b
+
+# Command line
+
+$ cat >check.sh
+#!/bin/sh
+echo "first: $1"
+echo "second: $2"
+[csed@localhost ~]$ chmod 777 check.sh
+[csed@localhost ~]$ ./check.sh hello world
+first: hello
+second: world

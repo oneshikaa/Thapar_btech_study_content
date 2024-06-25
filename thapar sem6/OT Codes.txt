@@ -1,0 +1,86 @@
+CODE 1 
+video : https://www.youtube.com/watch?v=3cU2vGEuDDw
+
+A = [1 4; 3 1; 1 1; 1 0; 0 1];
+B = [24; 21; 9; 0; 0];
+c = [2; 3];
+m = size(A, 1);
+y1 = 0:0.5:100;
+P = [0; 0];
+index = 0;
+
+for i = 1:m
+    x2 = (B(i) - A(i, 1) * y1) / A(i, 2);
+    x2 = max(0, x2);
+    plot(y1, x2);
+    hold on;
+    xlabel('x-axis');
+    ylabel('y-axis');
+end
+grid on;
+
+for i = 1:m-1
+    for j = i+1:m
+        asub = A([i, j], :);
+        bsub = B([i, j]); 
+        if det(asub) ~= 0
+            X1 = inv(asub) * bsub;
+            % plot(X1(1), X1(2),'*');
+            % hold on;
+            P = [P, X1];
+            index = index + 1;
+        end
+    end
+end
+
+pt = P';
+number = size(pt, 1); 
+index_feasible = 0; 
+asub = A([1:m-2], :) ;
+bsub = B([1:m-2]) ;
+
+for i = 1:number
+    if all(pt(i, :) >= 0) 
+        ptl = pt(i, :)';
+        if all(asub * ptl - bsub <= 0)
+            index_feasible = index_feasible + 1;
+            feasiblepts(:, index_feasible) = ptl;
+            plot(ptl(1), ptl(2), 'r*'); % Plot feasible points
+            hold on;
+        end
+    end
+end
+
+
+z = c' * feasiblepts ;
+maxima = max(z);
+
+********************************************************************************
+CODE 2 
+video : https://www.youtube.com/watch?v=yZI68R124gk
+%input
+a = [2,3,-1,4; 1,-2,6,-7];
+b = [8;-3];
+c = [2,3,4,7];
+%finding number of variables and equations
+n = size(a, 2);
+m = size(a, 1);
+%finding the number of cases (nCm) 
+nCm = nchoosek(n, m);
+% make pairs of m in the range 1 to n 
+t = nchoosek(1:n, m);
+sol = []; % Initialize solution matrix outside the loop
+for i = 1:nCm
+    y = zeros(n, 1); % Initialize y inside the loop
+    x = inv(a(:, t(i, :))) * b;
+    if all(x >= 0 & x ~= Inf) % Check if all elements of x are non-negative and finite
+        y(t(i, :)) = x;
+        sol = [sol y]; % Concatenate y to the solution matrix
+    end
+end
+%finding max if obj func is max
+max_value = max(c * sol); % Calculate the maximum value of the objective function
+disp(['Maximum value of the objective function: ', num2str(max_value)]);
+
+*************************************************************************************
+For theory ,video 7-10 : https://www.youtube.com/watch?v=jemAWA_WQCE&list=PLLtQL9wSL16gNRSaNVBmwCbLQG1CzUMq-&index=9

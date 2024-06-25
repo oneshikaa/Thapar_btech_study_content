@@ -1,0 +1,32 @@
+//Assignment 3
+//client side : Kashika Purohit 102103418
+
+
+#include <stdio.h>
+#include<sys/socket.h>
+#include<netdb.h>
+#include<sys/types.h>
+#include<string.h>
+
+int main() {
+
+  struct sockaddr_in serveraddr;
+  char data[100];
+
+  int sockFD = socket(AF_INET, SOCK_DGRAM, 0);
+
+  memset(&serveraddr, 0, sizeof(serveraddr));
+  serveraddr.sin_family = AF_INET;
+  serveraddr.sin_port = htons(8080);
+  serveraddr.sin_addr.s_addr = INADDR_ANY;
+
+  printf("Enter message: ");
+  fgets(data, sizeof(data), stdin);
+  sendto(sockFD, data, strlen(data), 0, (struct sockaddr *)&serveraddr, sizeof(serveraddr));
+
+  recvfrom(sockFD, data, sizeof(data), 0, NULL, NULL);
+  printf("Received: %s\n", data);
+
+  close(sockFD);
+  return 0;
+}

@@ -1,0 +1,44 @@
+Why Automated Testing?
+• Automated Software Testing saves time and money.
+• Vastly increase your test coverage.
+• Automated Testing improves accuracy.
+• Automation does what manual testing cannot.
+• Automated QA Testing helps developers and testers.
+• QA and Dev team morale improves.
+
+Advantages:
+• Reliable: eliminating human
+error
+• Reusability
+• Better software quality
+• Fewer labour resources are required
+• Cost reduction
+
+Disadvantages:
+• High investment is needed in the tools and training
+• Pesticide paradox
+• Requires high proficiency
+• Test script debugging can be challenging
+• Continuous script maintenance
+
+What is Selenium?
+• Browser-based Web Application Testing Tool
+• Open Source License
+• Extensible Framework
+• Support Mobile testing Android / iOS
+• Write test cases using languages like Java, C#, Python, Ruby & HTML
+• Supports native browser testing
+
+What is Selenium?
+• Browser-based Web Application Testing Tool
+• Open Source License
+• Extensible Framework
+• Support Mobile testing Android / iOS
+• Write test cases using languages like Java, C#, Python, Ruby & HTML
+• Supports native browser testing
+
+Selenium Components
+Selenium Grid
+Selenium IDE
+Selenium RC
+Selenium Web Driver
